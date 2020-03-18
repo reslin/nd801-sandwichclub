@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_height">200dp</dimen>
+
+    <dimen name="normal_space">16dp</dimen>
+    <dimen name="tiny_space">4dp</dimen>
+    <dimen name="null_space">0dp</dimen>
+
+    <dimen name="activity_horizontal_margin">@dimen/normal_space</dimen>
+    <dimen name="activity_vertical_margin">@dimen/normal_space</dimen>
+</resources>

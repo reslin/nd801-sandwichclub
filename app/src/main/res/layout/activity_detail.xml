@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/sandwich_iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_height"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/sandwich_picture_content_description"
+        android:scaleType="centerCrop" />
+
+    <!-- leave ImageView static and only scroll text contents -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/normal_space">
+
+            <!-- only the first TextView needs a paddingTop="0dp" -->
+            <TextView
+                style="@style/TextViewStyle.Bold"
+                android:paddingTop="@dimen/null_space"
+                android:text="@string/detail_place_of_origin_label" />
+
+            <TextView
+                android:id="@+id/origin_tv"
+                style="@style/TextViewStyle" />
+
+            <TextView
+                style="@style/TextViewStyle.Bold"
+                android:text="@string/detail_also_known_as_label" />
+
+            <TextView
+                android:id="@+id/also_known_tv"
+                style="@style/TextViewStyle" />
+
+            <TextView
+                style="@style/TextViewStyle.Bold"
+                android:text="@string/detail_ingredients_label" />
+
+            <TextView
+                android:id="@+id/ingredients_tv"
+                style="@style/TextViewStyle" />
+
+            <TextView
+                style="@style/TextViewStyle.Bold"
+                android:text="@string/detail_description_label" />
+
+            <TextView
+                android:id="@+id/description_tv"
+                style="@style/TextViewStyle" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
